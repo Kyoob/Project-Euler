@@ -1,7 +1,6 @@
 def primeSum(upto):
     if upto < 2:
         return None
-    count = 1
     primeList = [2]
     for i in range(3, upto):
         for prime in primeList:
@@ -14,7 +13,6 @@ def primeSum(upto):
         else:
             primeList.append(i)
             print(i)
-        count += 1
     return sum(primeList)
 
-print(primeSum(2000000))
+print(primeSum(100000))
