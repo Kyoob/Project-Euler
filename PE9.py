@@ -8,6 +8,6 @@ def pythagTriplet(upto):
                 if i + j + k > 1000:
                     break
                 if i ** 2 + j ** 2 == k ** 2 and i + j + k == upto:
-                    return i * j * k
+                    return ((i, j, k), i * j * k)
 
 print(pythagTriplet(1000))
